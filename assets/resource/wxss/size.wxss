@@ -1,0 +1,14 @@
+Page{
+    /*
+     * --变量名: 值
+     */
+
+    /*常规*/
+    --commonMarginSize: 40rpx;
+    --actionBarSizeMini: 140rpx;
+    --actionBarSizeOpen: 268rpx;
+
+    /*文字*/
+    --titleFontSize: 36rpx;
+    --textBold: 900;
+}

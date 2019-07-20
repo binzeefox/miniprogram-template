@@ -1,0 +1,30 @@
+/**app.wxss**/
+@import "./assets/resource/wxss/color.wxss";
+@import "./assets/resource/wxss/size.wxss";
+@import "assets/image/svg/icon_svg.wxss";
+
+page{
+  height: 100%;
+}
+
+.container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  /*justify-content: space-between;*/
+  box-sizing: border-box;
+  background: var(--colorBasicBackground);
+}
+
+.divider {
+  width: 100%;
+  height: 2rpx;
+  background: var(--colorDivider);
+}
+
+::-webkit-scrollbar{
+  width: 0;
+  height: 0;
+  color: transparent;
+}

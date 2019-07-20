@@ -1,0 +1,82 @@
+/* components/common/inputBox/inputBox.wxss */
+
+.input-box-container{
+    width: 750rpx;
+    height: 100%;
+
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+
+    background:rgba(0,0,0,0.2);
+
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+/*输入框容器*/
+.box-container{
+    width: 750rpx;
+    height: fit-content;
+    position: relative;
+
+    background: #ffffff;
+
+    justify-items: center;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+/*输入框*/
+.input{
+    width: 560rpx;
+    height: fit-content;
+    min-height: 28rpx;
+
+    margin: 30rpx 30rpx 36rpx;
+
+    font-size:28rpx;
+    font-family:PingFangSC-Regular;
+    font-weight:400;
+    color:var(--colorTextPrimary);
+    line-height:28rpx;
+    -webkit-background-clip:text;
+}
+
+/*输入框提示*/
+.input-hint{
+    font-size:28rpx;
+    font-family:PingFangSC-Regular;
+    font-weight:400;
+    color:var(--colorTextHint);
+    line-height:28rpx;
+    -webkit-background-clip:text;
+}
+
+/*按钮*/
+.button-container{
+    width: auto;
+    height: 60rpx;
+
+    margin-left: 30rpx;
+    padding: 0 28rpx;
+    background:rgba(70,163,255,1);
+    border-radius:6rpx;
+
+    position: absolute;
+    bottom: 14rpx;
+    right: 18rpx;
+}
+
+/*按钮文字*/
+.button-text{
+    font-size:28rpx;
+    font-family:PingFangSC-Regular;
+    font-weight:400;
+    color:rgba(255,255,255,1);
+    line-height:60rpx;
+    -webkit-background-clip:text;
+}

@@ -1,0 +1,46 @@
+<!--components/toolbar/toolbar.wxml-->
+<view
+        style="{{transparent ? 'background: transparent' : ''}}"
+        class="toolbar-container">
+
+    <!--标题-->
+    <view
+            style="height: {{height}}px; padding-top: 20rpx; {{!isLight ? 'color: #fff' : ''}}"
+            class="title-text">{{title}}</view>
+
+    <!--工具-->
+    <view
+            wx:if="{{showLocation || showSearchBar}}"
+            class="tool-container">
+
+        <!--地理按钮-->
+        <view
+                wx:if="{{showLocation}}"
+                bindtap="_tapLocation"
+                class="button-container">
+
+            <view class="location-icon"/>
+            <text class="location-text">{{locationText}}</text>
+        </view>
+
+        <!--搜索框-->
+        <view
+                wx:if="{{showSearchBar}}"
+                style="{{!showLocation || !showAsUp ? 'margin-left: 40rpx': ''}}"
+                bindtap='_tapSearch'
+                class="search-container">
+
+            <icon type='search' size='10' style='margin-left: 28rpx'/>
+            <text class="search-hint">搜索课程、教练、健身房</text>
+        </view>
+    </view>
+
+    <!--TODO 返回按钮-->
+    <view
+            wx:if="{{showAsUp}}"
+            bindtap="_tapBack"
+            class="home-as-up-button">
+
+        <view class="{{isLight ? 'back-icon' : 'back-icon-reverse'}}"/>
+    </view>
+</view>

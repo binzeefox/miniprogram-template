@@ -1,0 +1,22 @@
+Page{
+    /*
+     * --变量名: 值
+     */
+
+    /*常规*/
+    --colorMainBackground: linear-gradient(270deg,rgba(63,108,255,1) 0%,rgba(94,152,255,1) 100%);
+    --colorPrimary: #5389FF;
+    --colorBasicBackground: #F9F9F9;
+    --colorNegative: #D8D8D8;
+    --colorNotice: rgba(255,88,133,1);
+
+    /*文字*/
+    --colorTextTitle: #222222;
+    --colorTextPrimary: #666666;
+    --colorTextSecondary: #888888;
+    --colorTextHint: rgba(216,216,216,1);;
+
+    --colorDivider: #F1F1F1;
+
+}
+

@@ -1,0 +1,26 @@
+<!--components/common/imageSwiper/imageSwiper.wxml-->
+<swiper
+    class="main-container"
+    indicator-dots="true"
+    autoplay="true"
+    interval="3000"
+    duration="800"
+    circular="true"
+    current="{{current}}">
+
+    <block
+        wx:for="{{images}}"
+        wx:for-item="image"
+        wx:key="img">
+
+        <swiper-item>
+
+            <image
+                    id="{{image.action}}"
+                    class="image-style"
+                    mode="aspectFill"
+                    src="{{image.img}}"
+                    catchtap="_tapImage"/>
+        </swiper-item>
+    </block>
+</swiper>

@@ -1,0 +1,30 @@
+<!--components/common/inputBox/inputBox.wxml-->
+<view
+        catchtap="_dismiss"
+        hidden="{{!show}}"
+        class="input-box-container">
+
+    <view
+            catchtap="doNothing"
+            class="box-container">
+
+        <textarea
+                value="{{value}}"
+                class="input"
+                placeholder="{{placeholder}}"
+                fixed="true"
+                placeholder-class="input-hint"
+                bindinput="_input"
+                focus="{{show}}"
+                auto-height="true"
+                cursor-spacing="30rpx"/>
+
+        <view
+                catchtap="_tapButton"
+                class="button-container">
+
+            <text
+                    class="button-text">{{button}}</text>
+        </view>
+    </view>
+</view>
