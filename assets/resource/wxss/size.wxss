@@ -1,14 +1,14 @@
+/*
+ * 全局尺寸属性
+ * 用于全局的变量保存，可以直接在wxss文件中用#{ var(--colorBasicBackground)}导入属性
+ * -- 变量名: 值
+ */
 Page{
-    /*
-     * --变量名: 值
-     */
 
     /*常规*/
-    --commonMarginSize: 40rpx;
-    --actionBarSizeMini: 140rpx;
-    --actionBarSizeOpen: 268rpx;
+    --commonMarginSize: 40rpx;  /*常用边距尺寸*/
 
     /*文字*/
-    --titleFontSize: 36rpx;
-    --textBold: 900;
+    --titleFontSize: 36rpx; /*常用标题字号*/
+    --textBold: 900;    /*加粗字体*/
 }

@@ -20,7 +20,7 @@ Component({
    * 组件的初始数据
    */
   data: {
-    current: 0
+    current: 0  //当前Index
   },
 
   /**
